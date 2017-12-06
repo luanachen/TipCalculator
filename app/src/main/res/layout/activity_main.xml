@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.lccj.tipcalculator.MainActivity">
+
+  <EditText
+    android:id="@+id/textBillAmount"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="44dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:ems="10"
+    android:hint="@string/bill_amount"
+    android:inputType="textPersonName"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.111"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="122dp"
+    android:layout_height="28dp"
+    android:layout_marginTop="40dp"
+    android:text="Tip Percentage"
+    android:textSize="18sp"
+    app:layout_constraintStart_toStartOf="@+id/textBillAmount"
+    app:layout_constraintTop_toBottomOf="@+id/textBillAmount" />
+  <SeekBar
+    android:id="@+id/seekBar"
+    android:layout_width="243dp"
+    android:layout_height="22dp"
+    android:layout_marginTop="20dp"
+    android:max="20"
+    app:layout_constraintStart_toStartOf="@+id/textView"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+  <Button
+    android:id="@+id/btnCalculateTip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp"
+    android:layout_marginEnd="8dp"
+    android:text="Calculate Tip"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@+id/seekBar"
+    app:layout_constraintTop_toBottomOf="@+id/seekBarValue" />
+  <TextView
+    android:id="@+id/seekBarValue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.364"
+    app:layout_constraintStart_toEndOf="@+id/seekBar"
+    app:layout_constraintTop_toBottomOf="@+id/textView" />
+  <TextView
+    android:id="@+id/txtResult"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="tip amount"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/btnCalculateTip"
+    app:layout_constraintVertical_bias="0.045" />
+  <TextView
+    android:id="@+id/txtTotalBill"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="0"
+    android:textSize="24sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+  <TextView
+    android:id="@+id/textView3"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="Total Bill:"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+</android.support.constraint.ConstraintLayout>
